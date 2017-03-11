@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let secondFrame = CGRect(x: 20, y: 20, width: 50, height: 50)
         let secondView = UIView(frame: secondFrame)
         secondView.backgroundColor = UIColor.gray
-        view.addSubview(secondView)
+        firstView.addSubview(secondView)
         
         
     }
