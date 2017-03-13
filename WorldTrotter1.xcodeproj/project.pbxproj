@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E32DC3381E7467E6001C0D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3371E7467E6001C0D0B /* AppDelegate.swift */; };
-		E32DC33A1E7467E6001C0D0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3391E7467E6001C0D0B /* ViewController.swift */; };
 		E32DC33D1E7467E6001C0D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32DC33B1E7467E6001C0D0B /* Main.storyboard */; };
 		E32DC33F1E7467E6001C0D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32DC33E1E7467E6001C0D0B /* Assets.xcassets */; };
 		E32DC3421E7467E6001C0D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32DC3401E7467E6001C0D0B /* LaunchScreen.storyboard */; };
 		E32DC34D1E7467E6001C0D0B /* WorldTrotter1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC34C1E7467E6001C0D0B /* WorldTrotter1Tests.swift */; };
 		E32DC3581E7467E6001C0D0B /* WorldTrotter1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3571E7467E6001C0D0B /* WorldTrotter1UITests.swift */; };
+		E32DC3661E764547001C0D0B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3651E764547001C0D0B /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		E32DC3341E7467E6001C0D0B /* WorldTrotter1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32DC3371E7467E6001C0D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E32DC3391E7467E6001C0D0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E32DC33C1E7467E6001C0D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E32DC33E1E7467E6001C0D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32DC3411E7467E6001C0D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E32DC3531E7467E6001C0D0B /* WorldTrotter1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotter1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32DC3571E7467E6001C0D0B /* WorldTrotter1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotter1UITests.swift; sourceTree = "<group>"; };
 		E32DC3591E7467E6001C0D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32DC3651E764547001C0D0B /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E32DC3371E7467E6001C0D0B /* AppDelegate.swift */,
-				E32DC3391E7467E6001C0D0B /* ViewController.swift */,
+				E32DC3651E764547001C0D0B /* ConversionViewController.swift */,
 				E32DC33B1E7467E6001C0D0B /* Main.storyboard */,
 				E32DC33E1E7467E6001C0D0B /* Assets.xcassets */,
 				E32DC3401E7467E6001C0D0B /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32DC33A1E7467E6001C0D0B /* ViewController.swift in Sources */,
+				E32DC3661E764547001C0D0B /* ConversionViewController.swift in Sources */,
 				E32DC3381E7467E6001C0D0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
