@@ -53,6 +53,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="farenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="PdR-eW-iGq"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,6 +74,9 @@
                             <constraint firstItem="uP1-fH-Nls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pBe-6r-1yN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celciusLabel" destination="Q3U-8f-Pjt" id="SeS-hB-KH9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
