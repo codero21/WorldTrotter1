@@ -13,6 +13,17 @@ class ConversionViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var celciusLabel: UILabel!
     @IBOutlet var textField: UITextField!
+    var farenheitValue: Measurement<UnitTemperature>?
+    
+    var celciusValue: Measurement<UnitTemperature>? {
+        if let farenheitValue = farenheitValue {
+            return farenheitValue.converted(to: .celsius)
+        } else {
+            return nil
+        }
+    }
+    
+    
     
     
     
@@ -29,7 +40,6 @@ class ConversionViewController: UIViewController {
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
-        
     }
     
 }
