@@ -12,6 +12,7 @@ class ConversionViewController: UIViewController {
     
     // MARK: Properties
     @IBOutlet var celciusLabel: UILabel!
+    @IBOutlet var textField: UITextField!
     
     
     
@@ -24,6 +25,10 @@ class ConversionViewController: UIViewController {
         } else {
             celciusLabel.text = "???"
         }
+    }
+    
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
     }
     
 }
