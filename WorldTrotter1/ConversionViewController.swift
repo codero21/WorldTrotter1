@@ -29,6 +29,7 @@ class ConversionViewController: UIViewController {
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
+        
     }
     
 }
