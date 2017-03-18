@@ -13,7 +13,11 @@ class ConversionViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var celciusLabel: UILabel!
     @IBOutlet var textField: UITextField!
-    var farenheitValue: Measurement<UnitTemperature>?
+    var farenheitValue: Measurement<UnitTemperature>? {
+        didSet {
+            updateCelciusLabel()
+        }
+    }
     
     var celciusValue: Measurement<UnitTemperature>? {
         if let farenheitValue = farenheitValue {
@@ -23,23 +27,36 @@ class ConversionViewController: UIViewController {
         }
     }
     
-    
-    
-    
+ 
     
     //MARK: Actions
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateCelciusLabel()
+    }
+    
     @IBAction func farenheitFieldEditingChanged(_ textField: UITextField) {
         
-        // celciusLabel.text = textField.text
-        if let text = textField.text, !text.isEmpty {
-            celciusLabel.text = text
+        if let text = textField.text, let value = Double(text) {
+            farenheitValue = Measurement(value: value, unit: .fahrenheit)
         } else {
-            celciusLabel.text = "???"
+            farenheitValue = nil
         }
     }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
     }
+    
+    func updateCelciusLabel() {
+        if let celciusValue = celciusValue {
+            celciusLabel.text = "\(celciusValue.value)"
+        } else {
+            celciusLabel.text = "???"
+        }
+    }
+    
+    
     
 }
