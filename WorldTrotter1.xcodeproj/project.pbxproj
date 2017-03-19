@@ -14,6 +14,7 @@
 		E32DC34D1E7467E6001C0D0B /* WorldTrotter1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC34C1E7467E6001C0D0B /* WorldTrotter1Tests.swift */; };
 		E32DC3581E7467E6001C0D0B /* WorldTrotter1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3571E7467E6001C0D0B /* WorldTrotter1UITests.swift */; };
 		E32DC3661E764547001C0D0B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DC3651E764547001C0D0B /* ConversionViewController.swift */; };
+		E38CD85C1E7F4DB700F10321 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38CD85B1E7F4DB700F10321 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E32DC3571E7467E6001C0D0B /* WorldTrotter1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotter1UITests.swift; sourceTree = "<group>"; };
 		E32DC3591E7467E6001C0D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32DC3651E764547001C0D0B /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		E38CD85B1E7F4DB700F10321 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38CD85C1E7F4DB700F10321 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				E32DC34B1E7467E6001C0D0B /* WorldTrotter1Tests */,
 				E32DC3561E7467E6001C0D0B /* WorldTrotter1UITests */,
 				E32DC3351E7467E6001C0D0B /* Products */,
+				E38CD85A1E7F4DB600F10321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				E32DC3591E7467E6001C0D0B /* Info.plist */,
 			);
 			path = WorldTrotter1UITests;
+			sourceTree = "<group>";
+		};
+		E38CD85A1E7F4DB600F10321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E38CD85B1E7F4DB700F10321 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +526,7 @@
 				E32DC35E1E7467E6001C0D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32DC35F1E7467E6001C0D0B /* Build configuration list for PBXNativeTarget "WorldTrotter1Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				E32DC3611E7467E6001C0D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32DC3621E7467E6001C0D0B /* Build configuration list for PBXNativeTarget "WorldTrotter1UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				E32DC3641E7467E6001C0D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
