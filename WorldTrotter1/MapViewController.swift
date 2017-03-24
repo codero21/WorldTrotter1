@@ -16,7 +16,6 @@ class MapViewController: UIViewController {
     var mapView: MKMapView!
     
     
-    
     // MARK: Actions
     override func loadView() {
         // create map view
